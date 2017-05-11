@@ -7,7 +7,7 @@ module AvaTax
 
     def connection
       options = {
-        :headers => {'Accept' => "application/json; charset=utf-8", 'User-Agent' => user_agent},
+        :headers => {'Accept' => "application/json; charset=utf-8", 'User-Agent' => user_agent, 'Content-Type' => 'application/json'},
         :url => endpoint,
         :proxy => proxy,
       }.merge(connection_options)

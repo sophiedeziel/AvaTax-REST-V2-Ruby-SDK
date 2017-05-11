@@ -1,4 +1,5 @@
 require 'hashie'
+require 'json'
 
 module AvaTax
   module Request
@@ -26,8 +27,7 @@ module AvaTax
           request.url(URI.encode(path), options)
         when :post, :put
           request.path = URI.encode(path)
-          puts "BODY", options
-          request.body = options unless options.empty?
+          request.body = options.to_json unless options.empty?
         end
       end
 
