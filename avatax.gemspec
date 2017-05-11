@@ -2,10 +2,10 @@ require File.expand_path('../lib/avatax/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.add_development_dependency('rake', '~> 12.0.0')
-  s.add_development_dependency('rspec', '~> 3.0.0')
+  s.add_development_dependency('rspec', '> 3.4.4')
   s.add_development_dependency('webmock', '>= 2.0.0')
-  s.add_runtime_dependency('faraday', '>= 0.10')
-  s.add_runtime_dependency('faraday_middleware', '>= 0.10')
+  s.add_runtime_dependency('faraday', '< 1.0')
+  s.add_runtime_dependency('faraday_middleware', '< 1.0')
   s.add_runtime_dependency('multi_json', '>= 1.0.3')
   s.add_runtime_dependency('hashie', '>= 3.0.0')
   s.authors = ["Marcus Vorwaller"]
