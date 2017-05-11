@@ -1,0 +1,24 @@
+{
+  "totalTax": 9.88,
+  "totalTaxCalculated": 9.88,
+  "summary": [
+    {
+      "country": "US",
+      "region": "CA",
+      "jurisType": "Special",
+      "jurisCode": "EMAZ0",
+      "jurisName": "ORANGE COUNTY DISTRICT TAX SP",
+      "taxAuthorityType": 45,
+      "stateAssignedNo": "037",
+      "taxType": "Sales",
+      "taxName": "CA SPECIAL TAX",
+      "rateType": "General",
+      "taxable": 123.45,
+      "rate": 0.005,
+      "tax": 0.62,
+      "taxCalculated": 0.62,
+      "nonTaxable": 0,
+      "exemption": 0
+    }
+  ]
+}
