@@ -49,14 +49,14 @@ describe AvaTax::Client do
     end
   end
 
-  describe '.get_transaction' do
+  describe '.get_transaction_by_id' do
     let(:id) { 9128 }
     before do
       stub_get("/api/v2/transactions/#{id}")
         .to_return(body: fixture('transaction.json'), headers: { content_type: 'application/json; charset=utf-8' })
     end
 
-    subject { client.get_transaction(id) }
+    subject { client.get_transaction_by_id(id) }
 
     it 'should get the correct resource' do
       subject
